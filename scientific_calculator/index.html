@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <title>Scientific-Calculator</title>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th colspan="6"> <input type="text" class="i1" id="in1" placeholder="Operations"> </th>
+            </tr>
+            <tr>
+                <th colspan="6"> <input type="text" class="i2" id="in2" placeholder="Result"> </th>
+            </tr>
+            <tr>
+                <td onclick="adchar('√');"> √ </td>
+                <td onclick="adchar('^')"> x<sup>2</sup> </td>
+                <td onclick="adchar('(');"> ( </td>
+                <td onclick="adchar(')');"> ) </td>
+                <td onclick="clearing();"> C </td>
+                <td style="background-color: tomato; color:white" onclick="backspacer();">⌫</td>
+            </tr>
+            <tr>
+                <td onclick="adchar('e');"> e </td>
+                <td onclick="adchar('Π');"> Π </td>
+                <td onclick="adchar('7');"> 7 </td>
+                <td onclick="adchar('8');"> 8 </td>
+                <td onclick="adchar('9');"> 9 </td>
+                <td onclick="adchar('/');"> &#247; </td>
+            </tr>
+            <tr>
+                <td onclick="adchar('sin(');"> sin </td>
+                <td onclick="adchar('asin(');"> asin </td>
+                <td onclick="adchar('4');"> 4 </td>
+                <td onclick="adchar('5');"> 5 </td>
+                <td onclick="adchar('6');"> 6 </td>
+                <td onclick="adchar('*');"> &#215; </td>
+            </tr>
+            <tr>
+                <td onclick="adchar('cos(');"> cos </td>
+                <td onclick="adchar('acos(');"> acos </td>
+                <td onclick="adchar('1');"> 1 </td>
+                <td onclick="adchar('2');"> 2 </td>
+                <td onclick="adchar('3');"> 3 </td>
+                <td onclick="adchar(' - ');"> &#45; </td>
+            </tr>
+            <tr>
+                <td onclick="adchar('tan(');"> tan </td>
+                <td onclick="adchar('atan(');"> atan </td>
+                <td onclick="adchar('.');"> . </td>
+                <td onclick="adchar('0');"> 0 </td>
+                <td onclick="adchar('00');"> 00 </td>
+                <td onclick="adchar(' + ');"> &#43; </td>
+            </tr>
+            <tr>
+                <td onclick="adchar('!');"> x! </td>
+                <td onclick="adchar('e')"> x<sup>y</sup> </td>
+                <td colspan="4" style="background-color: turquoise;color: white; text-align: center" onclick="equals();"> = </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
